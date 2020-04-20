@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- External link -->
+    <link rel="stylesheet" href="../css/index_style.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/food.css">
+    <!-- End-External-link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- font-awesome-link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">
+            <img src="../images/foodlogo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto menu-text">
+            <li class="nav-item active">
+              <a class="nav-link aa" href="../index.html">ទំព័រដើម <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">អំពីយើង</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                អាហារ
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">ម្ហូប</a>
+                <a class="dropdown-item" href="dessert.html">បង្អែម</a>
+                <a class="dropdown-item" href="drink.html">ភេសជ្ជ:</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="./add-food.html">បន្ថែមម្ហូប</a>
+                <a class="dropdown-item" href="#">រដ្ធបាល</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-user"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-sign-in"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">ចូលប្រើ</a>
+                  <a class="dropdown-item" href="#">បង្កើតគណនីយ</a>
+                </div>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 menu-text" type="search" placeholder="ឈ្មោះអាហារ" aria-label="Search">
+            <button class="btn btn-secondary my-2 my-sm-0 menu-text" type="submit">ស្វែងរក</button>
+          </form>
+        </div>
+    </nav>
+
+<!-- body -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-5 col-5 collapse show d-md-flex bg-light pt-2 pl-0 min-vh-100" id="sidebar" style="border-right:2px solid lightgray">
+                <ul class="nav flex-column flex-nowrap">
+                    <li class="nav-item"><a class="nav-link text-truncate​ text-dark" href="#"><h3 style="padding-top: 30px; padding-bottom: 20px;">ម្ហូប</h3></a></li>
+                    <li class="nav-itme"><hr></li>
+                    <li class="nav-item ml-4">ជ្រើសរើសប្រភេទម្ហូប</li>
+                    <li class="nav-item ml-4">
+                        <form action="">
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="" checked>&nbsp;&nbsp;ទាំងអស់</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">&nbsp;&nbsp;ខ្មែរ</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">&nbsp;&nbsp;បរទេស</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">&nbsp;&nbsp;សម្លគោក</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">&nbsp;&nbsp;សម្លទឹក</label>
+                            </div>
+                            <div class="button">
+                                <button type="button" class="btn btn-secondary btn-sm">&nbsp;&nbsp;ដាក់ស្នើ</button>
+                            </div> 
+                        </form>
+                    </li>
+                </ul>
+            </div> 
+            <div class="col-lg-10 col-md-8 col-sm-5 col-5">
+                <div class="row p-5">
+                    <h3>ម្ហូបទាំងអស់ដែលមាន</h3>
+                </div>
+                <div class="row">
+                    <div class="card-columns">
+                        <div class="card">
+                          <div class="inner">
+                            <img class="card-img-top" src="../images/Food/chicken.jpg" alt="Card image cap">
+                          </div>
+                          <div class="card-body text-center">
+                            <h5 class="card-title">ស្លាបមាន់បំពងល្ង</h5>
+                            <p class="card-text"></p>
+                            <a href="food-detail.html">
+                              <button type="button" class="btn btn-secondary btn-home">របៀបធ្វើ</button>
+                            </a>
+                            </p>
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="inner">
+                            <img class="card-img-top" src="../images/Food/papaya.jpg" alt="Card image cap">
+                          </div>
+                          <div class="card-body text-center">
+                            <h5 class="card-title">មុកល្ហុង</h5>
+                            <p class="card-text"></p>
+                            <a href="food-detail.html">
+                              <button type="button" class="btn btn-secondary btn-home">របៀបធ្វើ</button>
+                            </a>
+                            </p>
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="inner">
+                            <img class="card-img-top" src="../images/Food/amok.png" alt="Card image cap">
+                          </div>
+                          <div class="card-body text-center">
+                            <h5 class="card-title">អាមុ៉​ក</h5>
+                            <p class="card-text"></p>
+                            <a href="food-detail.html">
+                              <button type="button" class="btn btn-secondary btn-home">របៀបធ្វើ</button>
+                            </a>
+                            </p>
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+        
+                <!-- Row2 -->
+                <div class="row">
+                    <div class="card-columns">
+                        <div class="card">
+                          <div class="inner">
+                            <img class="card-img-top" src="../images/Food/គីមឈីត្រសក់.jpg" alt="Card image cap">
+                          </div>
+                          <div class="card-body text-center">
+                            <h5 class="card-title">សគីមឈីត្រសក់</h5>
+                            <p class="card-text"></p>
+                            <a href="food-detail.html">
+                              <button type="button" class="btn btn-secondary btn-home">របៀបធ្វើ</button>
+                            </a>
+                            </p>
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="inner">
+                            <img class="card-img-top" src="../images/Food/បង្កងបំពងរំលីងអំបិលម្ទេស.jpg" alt="Card image cap">
+                          </div>
+                          <div class="card-body text-center">
+                            <h5 class="card-title">បង្កងបំពងរំលីងអំបិលម្ទេស</h5>
+                            <p class="card-text"></p>
+                            <a href="food-detail.html">
+                              <button type="button" class="btn btn-secondary btn-home">របៀបធ្វើ</button>
+                            </a>
+                            </p>
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="inner">
+                            <img class="card-img-top" src="../images/Food/បុកមឹកពិសេស.jpg" alt="Card image cap">
+                          </div>
+                          <div class="card-body text-center">
+                            <h5 class="card-title">បុកមឹកពិសេស</h5>
+                            <p class="card-text"></p>
+                            <a href="food-detail.html">
+                              <button type="button" class="btn btn-secondary btn-home">របៀបធ្វើ</button>
+                            </a>
+                            </p>
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+        
+                <!-- Row3 -->
+                <div class="row">
+                    <div class="card-columns">
+                        <div class="card">
+                          <div class="inner">
+                            <img class="card-img-top" src="../images/Food/ស៊ុតចៀនស្អំបំពងម្សៅ.jpg" alt="Card image cap">
+                          </div>
+                          <div class="card-body text-center">
+                            <h5 class="card-title">ស៊ុតចៀនស្អំបំពងម្សៅ</h5>
+                            <p class="card-text"></p>
+                            <a href="food-detail.html">
+                              <button type="button" class="btn btn-secondary btn-home">របៀបធ្វើ</button>
+                            </a>
+                            </p>
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="inner">
+                            <img class="card-img-top" src="../images/Food/chicken.jpg" alt="Card image cap">
+                          </div>
+                          <div class="card-body text-center">
+                            <h5 class="card-title">ស្លាបមាន់បំពងល្ង</h5>
+                            <p class="card-text"></p>
+                            <a href="food-detail.html">
+                              <button type="button" class="btn btn-secondary btn-home">របៀបធ្វើ</button>
+                            </a>
+                            </p>
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="inner">
+                            <img class="card-img-top" src="../images/Food/សាច់គោអាំងទឹកអំពិល.jpg" alt="Card image cap">
+                          </div>
+                          <div class="card-body text-center">
+                            <h5 class="card-title">សាច់គោអាំងទឹកអំពិល</h5>
+                            <p class="card-text"></p>
+                            <a href="food-detail.html">
+                              <button type="button" class="btn btn-secondary btn-home">របៀបធ្វើ</button>
+                            </a>
+                            </p>
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="row float-right">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!-- End-body -->
+
+<!-- Footer -->
+    <div class="container-fluid​ bg-dark">
+      <div class="row text-center no-gutters pt-5 pb-5">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+          <img src="../images/foodlogo.png" alt="">
+          <div class="text-white">QuickCook</div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+          <h5 class="text-white">ព័ត៌មានបន្ថែម</h5>
+          <p class="text-white footer-text">អាស័យដ្ឋាន៖  ផ្ទះលេខ១៣, ផ្លូវ12A, សង្កាត់ដង្កោ, ខណ្ណដង្កោ, រាជធានីភ្នំពេញ, កម្ពុជា</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+          <h5 class="text-white">ភ្ជាប់ទំនាក់ទំនងជាមួយពួកយើង</h5>
+                <div class="social">
+                  <a href="https://web.facebook.com/quickFoodOfficial/?modal=admin_todo_tour"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-youtube"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+        </div>
+      </div>
+  </div>
+  <!-- End-Footer -->
+
+    
+    <script src="../js/index.js"></script>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>

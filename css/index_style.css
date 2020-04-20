@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "KhmerOSbattambang";
+    src: url("../fonts/KhmerOSbattambang.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/KhmerOSbattambang.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("../fonts/KhmerOSbattambang.otf") format("opentype"), /* Open Type Font */
+      url("../fonts/KhmerOSbattambang.svg") format("svg"), /* Legacy iOS */
+      url("../fonts/KhmerOSbattambang.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("../fonts/KhmerOSbattambang.woff") format("woff"), /* Modern Browsers */
+      url("../fonts/KhmerOSbattambang.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "KhmerRotanakTraiyB";
+    src: url("../fonts/KhmerRotanakTraiyB.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/KhmerRotanakTraiyB.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("../fonts/KhmerRotanakTraiyB.otf") format("opentype"), /* Open Type Font */
+      url("../fonts/KhmerRotanakTraiyB.svg") format("svg"), /* Legacy iOS */
+      url("../fonts/KhmerRotanakTraiyB.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("../fonts/KhmerRotanakTraiyB.woff") format("woff"), /* Modern Browsers */
+      url("../fonts/KhmerRotanakTraiyB.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Romnea-Italic";
+    src: url("../fonts/Romnea-Italic.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/Romnea-Italic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("../fonts/Romnea-Italic.otf") format("opentype"), /* Open Type Font */
+      url("../fonts/Romnea-Italic.svg") format("svg"), /* Legacy iOS */
+      url("../fonts/Romnea-Italic.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("../fonts/Romnea-Italic.woff") format("woff"), /* Modern Browsers */
+      url("./fonts/Romnea-Italic.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+  .menu-text, .btn-home, .footer-text{
+    font-family: "KhmerOSbattambang";
+    color: white;
+  }
+  .card-header, .card-title, h5{
+    font-family: "Romnea-Italic";
+  }
+
+  .social i{
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+.social i:hover{
+  font-size: 50px;
+}
+/* hover to zoom */
+.inner {
+  overflow: hidden;
+  cursor: pointer;
+  }
+  .inner img {
+  transition: all 2s ease;
+  }
+  .inner:hover img {
+  transform: scale(1.4);
+  }

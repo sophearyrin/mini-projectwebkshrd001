@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- External link -->
+    <link rel="stylesheet" href="../css/index_style.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/food.css">
+    <link rel="stylesheet" href="../css/add-food.css">
+    <!-- End-External-link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- font-awesome-link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">
+            <img src="../images/foodlogo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto menu-text">
+            <li class="nav-item active">
+              <a class="nav-link aa" href="../index.html">ទំព័រដើម <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">អំពីយើង</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                អាហារ
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./food.html">ម្ហូប</a>
+                <a class="dropdown-item" href="dessert.html">បង្អែម</a>
+                <a class="dropdown-item" href="drink.html">ភេសជ្ជ:</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">បន្ថែមម្ហូប</a>
+                <a class="dropdown-item" href="#">រដ្ធបាល</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-user"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-sign-in"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">ចូលប្រើ</a>
+                  <a class="dropdown-item" href="#">បង្កើតគណនីយ</a>
+                </div>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 menu-text" type="search" placeholder="ឈ្មោះអាហារ" aria-label="Search">
+            <button class="btn btn-secondary my-2 my-sm-0 menu-text" type="submit">ស្វែងរក</button>
+          </form>
+        </div>
+    </nav>
+
+<!-- body -->
+<div class="container">
+    <div class="row menu-right" style="padding-right: 0;">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <div style="float: right;"><a href="#" class="text-success"><h6>បញ្ជីម្ហូប</h6></a></div>
+        <div style="float: right;"><a href="#" class="text-primary"><h6>បន្ថែមម្ហូប</h6></a></div>
+      </div> 
+    </div>   
+
+  <div class="row food-large-title" style="padding-top: 30px;">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <h2>បន្ថែមម្ហូប</h2>
+    </div>
+</div> 
+
+
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-btn">
+                <span class="btn btn-primary btn-file">
+                    ដាក់រូបភាព..<input type="file" id="imgInp">
+                </span>
+            </span>
+            <input type="text" class="form-control" readonly style="font-family: KhmerOSbattambang;">
+        </div>
+          <div class="img-fluid img-thumbnail box-photo-upload">
+            <!-- <img src="../images/addfood.png" alt="" class="img-fluid img-thumbnail addfoodphoto img-hide"> -->
+            <img src="../images/icon/addfood.png" id='img-upload' />
+            <!-- <h1 class="text-hide" style="background-image: url('/docs/4.0/assets/brand/bootstrap-solid.svg');">Bootstrap</h1> -->
+          </div>
+         
+      </div>
+      
+      </div>
+    
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+          <div class="form-group">
+            <label for="name">ឈ្មោះ</label>
+            <input type="text" class="form-control searchme" id="txtFoodName" placeholder="ឈ្មោះម្ហូប">
+          </div>
+          <div class="form-group searchme">
+            <label for="type">ប្រភេទ</label> <br>
+            <select name="" id="type" class="form-control">
+              <option value="dry">គោក</option>
+              <option value="foreign">ទឹក</option>
+            </select>
+          </div>
+          <div class="form-group searchme">
+            <label for="type">ប្រចាំខេត្ត</label> <br>
+            <select name="" id="type" class="form-control">
+              <option value="dry">បាត់ដំបង</option>
+              <option value="foreign">ក្រចេះ</option>
+            </select>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+        <div class="form-group searchme">
+          <label for="catalog">ផ្នែក</label> <br>
+          <select name="" id="catalog" class="form-control">
+            <option value="khmer">ខ្មែរ</option>
+            <option value="foreign">បរទេស</option>
+          </select>
+        </div>
+        <div class="form-group searchme">
+          <label for="country">ប្រទេស</label> <br>
+          <select name="" id="catalog" class="form-control">
+            <option value="khmer">ខ្មែរ</option>
+            <option value="foreign">បរទេស</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="country">តំណភ្ជាប់ទៅកាន់យូធូប</label>
+          <input type="text" class="form-control searchme" id="txtFoodName" placeholder="ឈ្មោះម្ហូប">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <h6>គ្រឿងទេស</h6>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col" style="width: 5.5%;">#</th>
+                <th scope="col" style="width: 40.5%;">គ្រឿងទេស</th>
+                <th scope="col" style="width: 30%;">បរិមាណ</th>
+                <th scope="col" style="width: 10%;">លុបចោល</th>
+                <th scope="col" style="width: 10%;">ធ្វើឡើងវិញ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input type="text" class="form-control" />
+                </td>
+                <td>
+                  <input type="text" class="form-control" />
+                </td>
+                <td>
+                  <input type="text" class="form-control" />
+                </td>
+                <td style="text-align: center;">
+                  <button type="button" class="btn btn-danger form-control"><i class="fa fa-minus-circle"></i></button>
+                </td>
+                <td style="text-align: center;">
+                  <button type="button" class="btn btn-success form-control"><i class="fa fa-undo"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" class="form-control" />
+                </td>
+                <td>
+                  <input type="text" class="form-control" />
+                </td>
+                <td>
+                  <input type="text" class="form-control" />
+                </td>
+                <td style="text-align: center;">
+                  <button type="button" class="btn btn-danger form-control"><i class="fa fa-minus-circle"></i></button>
+                </td>
+                <td style="text-align: center;">
+                  <button type="button" class="btn btn-success form-control"><i class="fa fa-undo"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" class="form-control" />
+                </td>
+                <td>
+                  <input type="text" class="form-control" />
+                </td>
+                <td>
+                  <input type="text" class="form-control" />
+                </td>
+                <td style="text-align: center;">
+                  <button type="button" class="btn btn-danger form-control"><i class="fa fa-minus-circle"></i></button>
+                </td>
+                <td style="text-align: center;">
+                  <button type="button" class="btn btn-success form-control"><i class="fa fa-undo"></i></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <h6>របៀបធ្វើ</h6>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <table class="table">
+          <thead>
+            <tr class="thead-light">
+              <th scope="col" style="width: 5.5%;">#</th>
+                <th scope="col" style="width: 70.5%">ពណ៌នា</th>
+                <th scope="col" style="width: 10%;">លុបចោល</th>
+                <th scope="col" style="width: 10%;">ធ្វើឡើងវិញ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <input type="text" class="form-control" />
+              </td>
+              <td>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="resize: none;"></textarea>
+              </td>
+              <td style="text-align: center;">
+                <button type="button" class="btn btn-danger form-control"><i class="fa fa-minus-circle"></i></button>
+              </td>
+              <td style="text-align: center;">
+                <button type="button" class="btn btn-success form-control"><i class="fa fa-undo"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" class="form-control" />
+              </td>
+              <td>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="resize: none;"></textarea>
+              </td>
+              <td style="text-align: center;">
+                <button type="button" class="btn btn-danger form-control"><i class="fa fa-minus-circle"></i></button>
+              </td>
+              <td style="text-align: center;">
+                <button type="button" class="btn btn-success form-control"><i class="fa fa-undo"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" class="form-control" />
+              </td>
+              <td>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="resize: none;"></textarea>
+              </td>
+              <td style="text-align: center;">
+                <button type="button" class="btn btn-danger form-control"><i class="fa fa-minus-circle"></i></button>
+              </td>
+              <td style="text-align: center;">
+                <button type="button" class="btn btn-success form-control"><i class="fa fa-undo"></i></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+      <h6>កំណត់សម្គាល់ផ្សេងៗ</h6>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" style="resize: none; font-family: KhmerOSbattambang;"></textarea>
+    </div>
+  </div>
+
+  <div class="text-right" style="margin-top: 30px; margin-bottom: 50px;">
+    <button type="submit" class="btn btn-primary">ដាក់ស្នើ</button>
+  </div>
+  
+  </div> 
+<!-- End-body -->
+
+<!-- Footer -->
+    <div class="container-fluid​ bg-dark">
+      <div class="row text-center no-gutters pt-5 pb-5">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+          <img src="../images/foodlogo.png" alt="">
+          <div class="text-white">QuickCook</div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+          <h5 class="text-white">ព័ត៌មានបន្ថែម</h5>
+          <p class="text-white footer-text">អាស័យដ្ឋាន៖  ផ្ទះលេខ១៣, ផ្លូវ12A, សង្កាត់ដង្កោ, ខណ្ណដង្កោ, រាជធានីភ្នំពេញ, កម្ពុជា</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+          <h5 class="text-white">ភ្ជាប់ទំនាក់ទំនងជាមួយពួកយើង</h5>
+                <div class="social">
+                  <a href="https://web.facebook.com/quickFoodOfficial/?modal=admin_todo_tour"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-youtube"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+        </div>
+      </div>
+  </div>
+  <!-- End-Footer -->
+
+    
+    <script src="../js/index.js"></script>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
